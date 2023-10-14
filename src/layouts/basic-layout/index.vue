@@ -20,7 +20,7 @@
     @click-mobile-sider-mask="app.setSiderCollapse(true)"
   >
     <template #header>
-      <global-header v-bind="headerProps" />
+      <global-header v-bind="headerProps" show-header-menu show-logo show-menu-collapse />
     </template>
     <template #tab>
       <global-tab />

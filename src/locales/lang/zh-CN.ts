@@ -17,8 +17,8 @@ const locale: I18nType.Schema = {
   },
   routes: {
     dashboard: {
-      _value: '仪表盘',
-      analysis: '分析页',
+      _value: '我的',
+      analysis: '文章列表',
       workbench: '工作台'
     },
     document: {

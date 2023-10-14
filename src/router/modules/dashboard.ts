@@ -4,17 +4,6 @@ const dashboard: AuthRoute.Route = {
   component: 'basic',
   children: [
     {
-      name: 'dashboard_analysis',
-      path: '/dashboard/analysis',
-      component: 'self',
-      meta: {
-        title: '分析页',
-        requiresAuth: true,
-        icon: 'icon-park-outline:analysis',
-        i18nTitle: 'routes.dashboard.analysis'
-      }
-    },
-    {
       name: 'dashboard_workbench',
       path: '/dashboard/workbench',
       component: 'self',
@@ -23,6 +12,17 @@ const dashboard: AuthRoute.Route = {
         requiresAuth: true,
         icon: 'icon-park-outline:workbench',
         i18nTitle: 'routes.dashboard.workbench'
+      }
+    },
+    {
+      name: 'dashboard_analysis',
+      path: '/dashboard/analysis',
+      component: 'self',
+      meta: {
+        title: '分析页',
+        requiresAuth: true,
+        icon: 'icon-park-outline:analysis',
+        i18nTitle: 'routes.dashboard.analysis'
       }
     }
   ],

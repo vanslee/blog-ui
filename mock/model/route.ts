@@ -10,7 +10,7 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
           path: '/dashboard/analysis',
           component: 'self',
           meta: {
-            title: '分析页',
+            title: '文章列表',
             requiresAuth: true,
             icon: 'icon-park-outline:analysis',
             i18nTitle: 'routes.dashboard.analysis'
@@ -29,7 +29,7 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
         }
       ],
       meta: {
-        title: '仪表盘',
+        title: '我的',
         icon: 'mdi:monitor-dashboard',
         order: 1,
         i18nTitle: 'routes.dashboard._value'
@@ -1122,17 +1122,6 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
       component: 'basic',
       children: [
         {
-          name: 'dashboard_analysis',
-          path: '/dashboard/analysis',
-          component: 'self',
-          meta: {
-            title: '分析页',
-            requiresAuth: true,
-            icon: 'icon-park-outline:analysis',
-            i18nTitle: 'routes.dashboard.analysis'
-          }
-        },
-        {
           name: 'dashboard_workbench',
           path: '/dashboard/workbench',
           component: 'self',
@@ -1141,6 +1130,17 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
             requiresAuth: true,
             icon: 'icon-park-outline:workbench',
             i18nTitle: 'routes.dashboard.workbench'
+          }
+        },
+        {
+          name: 'dashboard_analysis',
+          path: '/dashboard/analysis',
+          component: 'self',
+          meta: {
+            title: '分析页',
+            requiresAuth: true,
+            icon: 'icon-park-outline:analysis',
+            i18nTitle: 'routes.dashboard.analysis'
           }
         }
       ],
